@@ -12,7 +12,12 @@ def passada1(texto):
 
 
 def passada2(texto):
-    novotexto = list(texto).sort(reverse=True)
+    texto2 = list(texto)
+    texto2.reverse()
+    novotexto = ""
+    for s in texto2:
+        novotexto += s
+
     return novotexto
 
 
