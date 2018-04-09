@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de Pessoas</title>
+</head>
+<body>
+	<h1>Lista de Clientes</h1>
+	<hr>
+	<table border="4">
+		<tr>
+			<td>ID</td>
+			<td>Nome</td>
+			<td>Telefone</td>
+			<td>cpf</td>
+			<td>email</td>
+		</tr>
+		{% for pessoa in pessoas %}
+		<tr>
+			<td>{{ pessoa._id }}</td>
+			<td>{{ pessoa.nome }}</td>
+			<td>{{ pessoa.telefone }}</td>
+			<td>{{ pessoa.cpf }}</td>
+			<td>{{ pessoa.email }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<input type="submit" value="index">
+</body>
+</html>

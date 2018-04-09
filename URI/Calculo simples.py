@@ -23,5 +23,3 @@ while pedido < 2:
     pedido += 1
 
 print("VALOR A PAGAR: R$ %.2f" %total)
-
-#teste
